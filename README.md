@@ -14,7 +14,7 @@ ga doen: git hub aangemaakt en veldonderzoek
 
 Woensdag 4-2-2026 : 
 gedaan: Git hub en veldonderzoek
-liep vast op: Wilde niet alleen naar de dunkin
+liep vast op: x
 ga doen: mappenstructuur en de designs 
 
 Vrijdag 6-2-2026 : 
