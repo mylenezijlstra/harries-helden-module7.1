@@ -25,7 +25,7 @@ ga doen: trello, plan van aanpak, alles in git zetten en database aanmaken + all
 Dinsdag 10-2-2026 : 
 gedaan: trello, plan van aanpak, alles in git zetten en database aanmaken + alles erin zetten met sql query. heb in de avond de video opgenomen van de kiosk op schiphol. er was geen dunkin open dus ik heb de brugerking gefilmd. 
 liep vast op: dunkin was niet open
-ga doen: veldonderzoek filmpje erin zetten en de vragen beantwoorden over dat filmpje + lezen wat deze week moet doen. 
+ga doen: veldonderzoek filmpje erin zetten en de vragen beantwoorden over dat filmpje + lezen wat deze week moet doen. (filmpje was orgineel 336,6MB maar dit kon ik niet in git zetten dus heb de video veel kleiner gemaakt, alleen hierdoor is de kwaliteit wel minder)
 
 Woensdag 11-2-2026 : 
 gedaan: 
