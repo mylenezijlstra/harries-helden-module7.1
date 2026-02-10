@@ -20,4 +20,19 @@ ga doen: mappenstructuur en de designs
 Vrijdag 6-2-2026 : 
 gedaan: mappenstructuur en de designs 
 liep vast op: Grootte van kiosk scherm 
-ga doen: trello, plan van aanpak, alles in git zetten en database aanmaken + alles erin zetten met sql query 
+ga doen: trello, plan van aanpak, alles in git zetten en database aanmaken + alles erin zetten met sql query. heb in de avond de video opgenomen van de kiosk op schiphol. er was geen dunkin open dus ik heb de brugerking gefilmd. 
+
+Dinsdag 10-2-2026 : 
+gedaan: trello, plan van aanpak, alles in git zetten en database aanmaken + alles erin zetten met sql query. heb in de avond de video opgenomen van de kiosk op schiphol. er was geen dunkin open dus ik heb de brugerking gefilmd. 
+liep vast op: dunkin was niet open
+ga doen: veldonderzoek filmpje erin zetten en de vragen beantwoorden over dat filmpje + lezen wat deze week moet doen. 
+
+Woensdag 11-2-2026 : 
+gedaan: 
+liep vast op: 
+ga doen: 
+
+Vrijdag 13-2-2026 : 
+gedaan: 
+liep vast op:
+ga doen: 
