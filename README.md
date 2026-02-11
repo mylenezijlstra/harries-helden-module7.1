@@ -5,7 +5,7 @@ https://trello.com/b/zWkIxt89/happy-herbefor
 
 # kiosk video 
 De video staat voor het gemak wel op de gitrepo, maar de kwaliteit is niet zo goed omdat ik de video van 336MB naar minder dan 25MB moest maken. Daarom heb ik de video ook prive op youtube geplaatst voor betere kwaliteit. 
-Youtube link: 
+Youtube link: https://youtube.com/shorts/jveal3KOxwU?si=NTIPEQSE85HA4sP7 
 
 # stand-up 
 
