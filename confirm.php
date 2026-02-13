@@ -35,6 +35,7 @@ $_SESSION['cart'] = [];
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="confirm-screen">
+    <?php include "includes/header.php"; ?>
 
 <h1>Bestelling Bevestigd!</h1>
 <h2>Jouw Bestelnummer</h2>

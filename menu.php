@@ -23,6 +23,7 @@ AND p.available = 1
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="menu-screen">
+    <?php include "includes/header.php"; ?>
 
 <div class="sidebar">
     <h3>Categories</h3>
