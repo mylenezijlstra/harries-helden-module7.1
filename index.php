@@ -1,16 +1,24 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Herbivore</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Happy Herbivore ~ Healthy in a Hurry</title>
 </head>
+<body class="start-screen">
 
-<body>
+<div class="start-container">
+    <img src="./assets/img/logo.png" class="logo" alt="Happy Herbivore Logo">
 
-    <script src="assets/js/app.js"></script>
+    <h1>Welkom bij Happy Herbivore</h1>
+    <h2>Healthy in a Hurry</h2>
+
+    <a href="menu.php" class="start-button">
+        Raak aan om te bestellen
+    </a>
+
+    <p class="tagline">100% Plantaardig • Vers • Heerlijk</p>
+</div>
+
 </body>
-
 </html>
