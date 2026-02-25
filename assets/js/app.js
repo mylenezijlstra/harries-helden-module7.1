@@ -3,17 +3,38 @@ async function loadCategories() {
     const res = await fetch('/harries-helden-module7.1/api/categories.php');
     const categories = await res.json();
 
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.innerHTML = '<h3>Categories</h3>';
+    const list = document.getElementById('category-list');
+    list.innerHTML = '';
 
-    categories.forEach(cat => {
-        sidebar.innerHTML += `
-            <a href="#" class="cat-btn" onclick="loadProducts(${cat.category_id})">
-                ${cat.name}
-            </a>
-        `;
+    categories.forEach((cat, index) => {
+
+        const btn = document.createElement('a');
+        btn.href = "#";
+        btn.className = "cat-btn";
+        btn.innerText = cat.name;
+
+        btn.onclick = (e) => {
+            e.preventDefault();
+
+            // active verwijderen
+            document.querySelectorAll('.cat-btn')
+                .forEach(b => b.classList.remove('active'));
+
+            // deze actief maken
+            btn.classList.add('active');
+
+            loadProducts(cat.category_id);
+        };
+
+        list.appendChild(btn);
+
+        // 👉 eerste categorie automatisch actief
+        if (index === 0) {
+            btn.classList.add('active');
+        }
     });
 }
+
 
 // 👉 Producten laden
 async function loadProducts(cat = 1) {
@@ -40,6 +61,7 @@ async function loadProducts(cat = 1) {
     });
 }
 
+
 // 👉 Toevoegen aan winkelmandje via API
 async function addToCart(id) {
     await fetch('/harries-helden-module7.1/api/cart.php', {
@@ -50,11 +72,13 @@ async function addToCart(id) {
     updateCartInfo();
 }
 
+
 // 👉 Toevoegen + popup sluiten
 async function addToCartAndClose(id) {
     await addToCart(id);
     closePopup();
 }
+
 
 // 👉 Winkelmandje info updaten
 async function updateCartInfo() {
@@ -70,6 +94,7 @@ async function updateCartInfo() {
 
     bar.innerHTML = `<strong>${data.items.length} items</strong> €${data.total.toFixed(2)}`;
 }
+
 
 // 👉 Product popup openen
 function openProduct(id) {
@@ -116,10 +141,12 @@ function openProduct(id) {
         });
 }
 
+
 // 👉 Popup sluiten
 function closePopup() {
     document.getElementById('popup-overlay').style.display = 'none';
 }
+
 
 // 👉 Startpagina laden
 loadCategories();

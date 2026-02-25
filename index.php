@@ -13,7 +13,7 @@
     <h1>Welkom bij Happy Herbivore</h1>
     <h2>Healthy in a Hurry</h2>
 
-    <a href="menu.php" class="start-button">
+    <a href="keuze.php" class="start-button">
         Raak aan om te bestellen
     </a>
 
