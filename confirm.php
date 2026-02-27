@@ -5,12 +5,19 @@ include "includes/db.php";
 
 $total = 0;
 
-foreach($_SESSION['cart'] as $id){
-    $id = (int)$id;
+foreach ($_SESSION['cart'] as $id) {
+    $id = (int) $id;
     $r = $conn->query("SELECT price FROM products WHERE product_id=$id");
     $row = $r->fetch_assoc();
     $total += $row['price'];
 }
+
+// Donation
+$donation = isset($_POST['donation_amount']) ? floatval($_POST['donation_amount']) : 0;
+if (!in_array($donation, [0, 0.50, 1.00])) {
+    $donation = 0;
+}
+$total += $donation;
 
 $date = date("Y-m-d");
 $count = $conn->query("SELECT COUNT(*) as c FROM orders WHERE DATE(datetime)='$date'");
@@ -22,8 +29,8 @@ VALUES (2,$pickup,$total)");
 
 $order_id = $conn->insert_id;
 
-foreach($_SESSION['cart'] as $id){
-    $id = (int)$id;
+foreach ($_SESSION['cart'] as $id) {
+    $id = (int) $id;
     $r = $conn->query("SELECT price FROM products WHERE product_id=$id");
     $row = $r->fetch_assoc();
     $conn->query("INSERT INTO order_product (order_id,product_id,price)
@@ -35,6 +42,7 @@ $_SESSION['cart'] = [];
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title><?= t('order_confirmed') ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -42,28 +50,30 @@ $_SESSION['cart'] = [];
     <!-- Auto redirect na 5 seconden -->
     <meta http-equiv="refresh" content="5;url=<?= lang_url('index.php') ?>">
 </head>
+
 <body class="confirm-screen">
 
-<?php include "includes/language_switch.php"; ?>
+    <?php include "includes/language_switch.php"; ?>
 
-<div class="confirm-container">
+    <div class="confirm-container">
 
-    <h1><?= t('order_confirmed') ?></h1>
-    <h2><?= t('your_number') ?></h2>
+        <h1><?= t('order_confirmed') ?></h1>
+        <h2><?= t('your_number') ?></h2>
 
-    <div class="pickup-number">
-        #<?=str_pad($pickup,3,"0",STR_PAD_LEFT)?>
+        <div class="pickup-number">
+            #<?= str_pad($pickup, 3, "0", STR_PAD_LEFT) ?>
+        </div>
+
+        <p class="redirect-text">
+            <?= t('redirecting') ?>
+        </p>
+
+        <a href="<?= lang_url('index.php') ?>" class="start-button">
+            <?= t('new_order') ?>
+        </a>
+
     </div>
 
-    <p class="redirect-text">
-        <?= t('redirecting') ?>
-    </p>
-
-    <a href="<?= lang_url('index.php') ?>" class="start-button">
-        <?= t('new_order') ?>
-    </a>
-
-</div>
-
 </body>
+
 </html>

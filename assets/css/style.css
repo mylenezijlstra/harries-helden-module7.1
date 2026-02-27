@@ -1,5 +1,6 @@
 /* GLOBAL */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Arial';
@@ -71,7 +72,7 @@ html, body {
     gap: 10px;
     overflow-y: auto;
 
-    align-content: start;  
+    align-content: start;
 }
 
 /* PRODUCT CARD */
@@ -82,16 +83,16 @@ html, body {
     cursor: pointer;
     transition: 0.2s;
 
-    min-height: 560px;      
+    min-height: 560px;
     display: flex;
     flex-direction: column;
 
-    padding-top: 0px;  
+    padding-top: 0px;
 }
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* IMAGE */
@@ -139,17 +140,19 @@ html, body {
 .bottom-bar {
     position: fixed;
     bottom: 0;
-    left: 0;               /* belangrijk */
+    left: 0;
+    /* belangrijk */
     right: 0;
     height: 140px;
     background: #004d40;
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 40px 0 290px; /* ruimte voor sidebar */
+    padding: 0 40px 0 290px;
+    /* ruimte voor sidebar */
     z-index: 10;
     gap: 40px;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Cart info */
@@ -163,13 +166,15 @@ html, body {
 .review-order {
     margin-left: auto;
     background: linear-gradient(135deg, #ff7a1a, #ff9f4d);
-    color: white !important;              /* tekst wit */
-    text-decoration: none !important;     /* geen streep */
+    color: white !important;
+    /* tekst wit */
+    text-decoration: none !important;
+    /* geen streep */
     padding: 18px 34px;
     border-radius: 14px;
     font-size: 24px;
     font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transition: 0.25s;
     display: inline-flex;
     align-items: center;
@@ -177,10 +182,12 @@ html, body {
 }
 
 .review-order:hover {
-    color: white !important;              /* ook wit bij hover */
-    text-decoration: none !important;     /* geen streep bij hover */
+    color: white !important;
+    /* ook wit bij hover */
+    text-decoration: none !important;
+    /* geen streep bij hover */
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
     background: linear-gradient(135deg, #ff6a00, #ff8c2f);
 }
 
@@ -191,7 +198,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
@@ -230,7 +237,8 @@ html, body {
 
 /* LOGO */
 .logo {
-    width: 780px;   /* pas aan naar smaak */
+    width: 780px;
+    /* pas aan naar smaak */
     max-width: 80%;
 }
 
@@ -273,13 +281,13 @@ html, body {
     color: #ff6a00;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: 0.25s;
 }
 
 .keuze-btn:hover {
     transform: scale(1.08);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -338,7 +346,7 @@ html, body {
     color: white;
     background: linear-gradient(135deg, #ff7a1a, #ff9f4d);
     border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
     transition: all 0.25s ease;
     animation: pulse 2.5s infinite;
 }
@@ -346,7 +354,7 @@ html, body {
 /* Hover effect */
 .start-button:hover {
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 14px 35px rgba(0,0,0,0.45);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
     background: linear-gradient(135deg, #ff6a00, #ff8c2f);
 }
 
@@ -358,13 +366,15 @@ html, body {
 /* Pulse animatie */
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(255,122,26, 0.6);
+        box-shadow: 0 0 0 0 rgba(255, 122, 26, 0.6);
     }
+
     70% {
-        box-shadow: 0 0 0 25px rgba(255,122,26, 0);
+        box-shadow: 0 0 0 25px rgba(255, 122, 26, 0);
     }
+
     100% {
-        box-shadow: 0 0 0 0 rgba(255,122,26, 0);
+        box-shadow: 0 0 0 0 rgba(255, 122, 26, 0);
     }
 }
 
@@ -375,6 +385,9 @@ html, body {
     background: #f4f4f4;
     font-family: Arial, sans-serif;
     padding: 40px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .review-container {
@@ -402,7 +415,7 @@ html, body {
     background: white;
     border-radius: 18px;
     padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     gap: 25px;
 }
 
@@ -480,6 +493,80 @@ html, body {
 }
 
 
+/* DONATION SECTION */
+
+.donation-section {
+    margin-top: 40px;
+    background: #e8f5e9;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.donation-section h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #2e7d32;
+}
+
+.donation-section p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.donation-options {
+    display: flex;
+    gap: 20px;
+}
+
+.donation-card {
+    flex: 1;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    padding: 24px 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.donation-card input[type="radio"] {
+    display: none;
+}
+
+.donation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.donation-card.selected {
+    border-color: #43a047;
+    background: #f1f8e9;
+    box-shadow: 0 6px 20px rgba(67, 160, 71, 0.25);
+}
+
+.donation-icon {
+    font-size: 42px;
+}
+
+.donation-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.donation-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
 /* CONFIRM PAGE */
 
 .confirm-screen {
@@ -515,7 +602,7 @@ html, body {
     padding: 40px 80px;
     border-radius: 25px;
     display: inline-block;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     margin-bottom: 30px;
     animation: pop 0.6s ease;
 }
@@ -529,14 +616,31 @@ html, body {
 /* Animaties */
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes pop {
-    0% { transform: scale(0.5); opacity: 0; }
-    80% { transform: scale(1.1); }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* ===== LANGUAGE SWITCH ===== */

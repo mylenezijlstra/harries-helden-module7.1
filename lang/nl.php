@@ -20,7 +20,7 @@ return [
     "add_to_cart" => "Toevoegen aan bestelling",
     "close" => "Sluiten",
 
- // review
+    // review
     "review_your_order" => "Controleer je bestelling",
     "total" => "Totaal",
     "confirm_order" => "Bestelling bevestigen",
@@ -31,5 +31,12 @@ return [
     "your_number" => "Jouw Bestelnummer",
     "redirecting" => "Je wordt automatisch teruggestuurd...",
     "new_order" => "Nieuwe Bestelling",
+
+    // donation
+    "donation_title" => "Geef iets terug 💚",
+    "donation_description" => "Wil je een kleine bijdrage leveren aan een goed doel of de ecologische voetafdruk van je bestelling compenseren?",
+    "donation_charity" => "Doneer aan goed doel",
+    "donation_eco" => "Compenseer CO₂-voetafdruk",
+    "donation_none" => "Nee, bedankt",
 
 ];

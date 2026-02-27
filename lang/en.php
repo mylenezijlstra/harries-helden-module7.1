@@ -21,16 +21,23 @@ return [
     "add_to_cart" => "Add to order",
     "close" => "Close",
 
-   // review
-"review_your_order" => "Review Your Order",
-"total" => "Total",
-"confirm_order" => "Confirm Order",
-"add_more_items" => "Add More Items",
+    // review
+    "review_your_order" => "Review Your Order",
+    "total" => "Total",
+    "confirm_order" => "Confirm Order",
+    "add_more_items" => "Add More Items",
 
     // confirm
     "order_confirmed" => "Order Confirmed!",
     "your_number" => "Your Pickup Number",
     "redirecting" => "You will be redirected automatically...",
     "new_order" => "New Order",
+
+    // donation
+    "donation_title" => "Give Back 💚",
+    "donation_description" => "Would you like to donate to charity or compensate the ecological footprint of your order?",
+    "donation_charity" => "Donate to charity",
+    "donation_eco" => "Compensate CO₂ footprint",
+    "donation_none" => "No, thanks",
 
 ];
