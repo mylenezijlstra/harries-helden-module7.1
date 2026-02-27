@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "includes/lang.php";
 include "includes/db.php";
 
 $total = 0;
@@ -35,28 +36,32 @@ $_SESSION['cart'] = [];
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bestelling Bevestigd</title>
+    <title><?= t('order_confirmed') ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Auto redirect na 5 seconden -->
-    <meta http-equiv="refresh" content="5;url=index.php">
+    <meta http-equiv="refresh" content="5;url=<?= lang_url('index.php') ?>">
 </head>
 <body class="confirm-screen">
 
+<?php include "includes/language_switch.php"; ?>
+
 <div class="confirm-container">
 
-    <h1>Bestelling Bevestigd!</h1>
-    <h2>Jouw Bestelnummer</h2>
+    <h1><?= t('order_confirmed') ?></h1>
+    <h2><?= t('your_number') ?></h2>
 
     <div class="pickup-number">
         #<?=str_pad($pickup,3,"0",STR_PAD_LEFT)?>
     </div>
 
     <p class="redirect-text">
-        Je wordt automatisch teruggestuurd...
+        <?= t('redirecting') ?>
     </p>
 
-    <a href="index.php" class="start-button">Nieuwe Bestelling</a>
+    <a href="<?= lang_url('index.php') ?>" class="start-button">
+        <?= t('new_order') ?>
+    </a>
 
 </div>
 

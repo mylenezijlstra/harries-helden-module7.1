@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "includes/lang.php";
 
 /* Maak array met 1 t/m 25 */
 $images = range(1, 25);
@@ -18,11 +19,13 @@ $images = array_slice($images, 0, 6);
 </head>
 <body class="start-screen">
 
+<?php include "includes/language_switch.php"; ?>
+
 <!-- SLIDESHOW -->
 <div class="slideshow">
     <?php foreach ($images as $index => $num): ?>
-        <div class="slide <?php echo $index === 0 ? 'active' : ''; ?>">
-            <img src="assets/img/eten<?php echo $num; ?>.png" alt="Eten">
+        <div class="slide <?= $index === 0 ? 'active' : '' ?>">
+            <img src="assets/img/eten<?= $num; ?>.png" alt="Eten">
         </div>
     <?php endforeach; ?>
 </div>
@@ -31,14 +34,14 @@ $images = array_slice($images, 0, 6);
 <div class="start-container">
     <img src="./assets/img/logo (2).png" class="logo" alt="Happy Herbivore Logo">
 
-    <h1>Welkom bij Happy Herbivore</h1>
-    <h2>Healthy in a Hurry</h2>
+    <h1><?= t('welcome') ?></h1>
+    <h2><?= t('healthy') ?></h2>
 
-    <a href="keuze.php" class="start-button">
-        Raak aan om te bestellen
+    <a href="<?= lang_url('keuze.php') ?>" class="start-button">
+        <?= t('touch_order') ?>
     </a>
 
-    <p class="tagline">100% Plantaardig • Vers • Heerlijk</p>
+   <p class="tagline"><?= t('tagline') ?></p>
 </div>
 
 <!-- SLIDESHOW SCRIPT -->

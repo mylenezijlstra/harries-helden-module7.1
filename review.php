@@ -1,9 +1,10 @@
 <?php
 session_start();
+include "includes/lang.php";
 include "includes/db.php";
 
 if(empty($_SESSION['cart'])){
-    header("Location: menu.php");
+    header("Location: " . lang_url("menu.php"));
     exit();
 }
 
@@ -13,14 +14,16 @@ $total = 0;
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Review Order</title>
+    <title><?= t('review_order') ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="review-screen">
 
+<?php include "includes/language_switch.php"; ?>
+
 <div class="review-container">
 
-    <h1>Review Your Order</h1>
+    <h1><?= t('review_your_order') ?></h1>
 
     <div class="review-list">
 
@@ -56,16 +59,18 @@ $total = 0;
     </div>
 
     <div class="review-total">
-        <h2>Total</h2>
+        <h2><?= t('total') ?></h2>
         <h2>€<?= number_format($total,2) ?></h2>
     </div>
 
     <div class="review-actions">
-        <form action="confirm.php" method="POST">
-            <button class="confirm-btn">Confirm Order</button>
+        <form action="<?= lang_url('confirm.php') ?>" method="POST">
+            <button class="confirm-btn"><?= t('confirm_order') ?></button>
         </form>
 
-        <a href="menu.php" class="back-btn">Add More Items</a>
+        <a href="<?= lang_url('menu.php') ?>" class="back-btn">
+            <?= t('add_more_items') ?>
+        </a>
     </div>
 
 </div>

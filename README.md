@@ -46,9 +46,14 @@ weekje vakantie
 Dinsdag 24-2-2026 : 
 gedaan: medische afspraak 
 liep vast op: medische afspraak 
-ga doen: git medische afspraak 
+ga doen: medische afspraak 
 
 Woensdag 25-2-2026 : 
 gedaan: heb basis van de kiosk gemaakt. css, js en php en html geschreven. meerdere files toegevoegd. 
-liep vast op: 
-ga doen: git 
+liep vast op: vond het niet heel mooi ofz
+ga doen: heb een extra pop up scherm gemaakt met dat je de gerechten en items kan aanpassen. dus als je er op klikt krijg je een keuze menu en dan kan je de ingredienten aanpassen en dan toevoegen aan je bestelling. 
+
+Woensdag 25-2-2026 : 
+gedaan: heb een extra pop up scherm gemaakt met dat je de gerechten en items kan aanpassen. dus als je er op klikt krijg je een keuze menu en dan kan je de ingredienten aanpassen en dan toevoegen aan je bestelling. 
+liep vast op: iets in de styling werkte niet mee
+ga doen: heb voor alle paginas styling gemaakt. en een slideshow gemaakt voor op de homepagina. Ook heb ik voor de laatste pagina (waar je je bestel nummer ziet) een timer toegevoegd zodat hij vanzelf naar de home page gaat. 

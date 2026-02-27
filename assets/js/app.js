@@ -16,19 +16,15 @@ async function loadCategories() {
         btn.onclick = (e) => {
             e.preventDefault();
 
-            // active verwijderen
             document.querySelectorAll('.cat-btn')
                 .forEach(b => b.classList.remove('active'));
 
-            // deze actief maken
             btn.classList.add('active');
-
             loadProducts(cat.category_id);
         };
 
         list.appendChild(btn);
 
-        // 👉 eerste categorie automatisch actief
         if (index === 0) {
             btn.classList.add('active');
         }
@@ -88,11 +84,11 @@ async function updateCartInfo() {
     const bar = document.getElementById('cart-info');
 
     if (data.error) {
-        bar.innerHTML = "<strong>0 items</strong> €0.00";
+        bar.innerHTML = `<strong>0 ${translations.items}</strong> €0.00`;
         return;
     }
 
-    bar.innerHTML = `<strong>${data.items.length} items</strong> €${data.total.toFixed(2)}`;
+    bar.innerHTML = `<strong>${data.items.length} ${translations.items}</strong> €${data.total.toFixed(2)}`;
 }
 
 
@@ -116,7 +112,9 @@ function openProduct(id) {
                 <p>${p.kcal} kcal</p>
                 <p>€${parseFloat(p.price).toFixed(2)}</p>
 
-                <button id="edit-ingredients-btn">Ingrediënten aanpassen</button>
+                <button id="edit-ingredients-btn">
+                    ${translations.customize_ingredients}
+                </button>
 
                 <div id="ingredient-list" class="ingredient-list" style="display:none; margin-top:20px;">
                     ${ingredients.map(i => `
@@ -128,13 +126,14 @@ function openProduct(id) {
                 </div>
 
                 <button onclick="addToCartAndClose(${p.product_id})" style="margin-top:20px;">
-                    Toevoegen aan bestelling
+                    ${translations.add_to_cart}
                 </button>
 
-                <button onclick="closePopup()" style="margin-top:10px;">Sluiten</button>
+                <button onclick="closePopup()" style="margin-top:10px;">
+                    ${translations.close}
+                </button>
             `;
 
-            // 👉 Ingrediënten-knop functionaliteit
             document.getElementById('edit-ingredients-btn').onclick = () => {
                 document.getElementById('ingredient-list').style.display = 'block';
             };
