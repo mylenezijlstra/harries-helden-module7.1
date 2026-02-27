@@ -56,4 +56,4 @@ ga doen: heb een extra pop up scherm gemaakt met dat je de gerechten en items ka
 Woensdag 25-2-2026 : 
 gedaan: heb een extra pop up scherm gemaakt met dat je de gerechten en items kan aanpassen. dus als je er op klikt krijg je een keuze menu en dan kan je de ingredienten aanpassen en dan toevoegen aan je bestelling. 
 liep vast op: iets in de styling werkte niet mee
-ga doen: heb voor alle paginas styling gemaakt. en een slideshow gemaakt voor op de homepagina. Ook heb ik voor de laatste pagina (waar je je bestel nummer ziet) een timer toegevoegd zodat hij vanzelf naar de home page gaat. 
+ga doen: heb voor alle paginas styling gemaakt. en een slideshow gemaakt voor op de homepagina. Ook heb ik voor de laatste pagina (waar je je bestel nummer ziet) een timer toegevoegd zodat hij vanzelf naar de home page gaat. heb ook ervoor gezorgd dat je hem naar het engels kunt vertalen en terug naar het nederlands 
