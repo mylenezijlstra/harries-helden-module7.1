@@ -1,4 +1,3 @@
-// 👉 Categorieën laden
 async function loadCategories() {
     const res = await fetch('/harries-helden-module7.1/api/categories.php');
     const categories = await res.json();
@@ -32,7 +31,7 @@ async function loadCategories() {
 }
 
 
-// 👉 Producten laden
+// Producten laden
 async function loadProducts(cat = 1) {
     const res = await fetch(`/harries-helden-module7.1/api/products.php?cat=${cat}`);
     const products = await res.json();
@@ -58,7 +57,7 @@ async function loadProducts(cat = 1) {
 }
 
 
-// 👉 Toevoegen aan winkelmandje via API
+// Toevoegen aan winkelmandje via API
 async function addToCart(id) {
     await fetch('/harries-helden-module7.1/api/cart.php', {
         method: "POST",
@@ -69,14 +68,14 @@ async function addToCart(id) {
 }
 
 
-// 👉 Toevoegen + popup sluiten
+// Toevoegen + popup sluiten
 async function addToCartAndClose(id) {
     await addToCart(id);
     closePopup();
 }
 
 
-// 👉 Winkelmandje info updaten
+// Winkelmandje info updaten
 async function updateCartInfo() {
     const res = await fetch('/harries-helden-module7.1/api/order.php');
     const data = await res.json();
@@ -92,7 +91,7 @@ async function updateCartInfo() {
 }
 
 
-// 👉 Product popup openen
+// Product popup openen
 function openProduct(id) {
     fetch(`/harries-helden-module7.1/api/product.php?id=${id}`)
         .then(res => res.json())
@@ -146,7 +145,7 @@ function openProduct(id) {
 }
 
 
-// 👉 Cross-sell producten laden
+// Cross-sell producten laden
 async function loadCrossSell(productId) {
     try {
         const res = await fetch(`/harries-helden-module7.1/api/cross_sell.php?product_id=${productId}`);
@@ -181,13 +180,13 @@ async function loadCrossSell(productId) {
 }
 
 
-// 👉 Popup sluiten
+// Popup sluiten
 function closePopup() {
     document.getElementById('popup-overlay').style.display = 'none';
 }
 
 
-// 👉 Startpagina laden
+// Startpagina laden
 loadCategories();
 loadProducts(1);
 updateCartInfo();

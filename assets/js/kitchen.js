@@ -1,9 +1,7 @@
-// =============================
 // Kitchen Display System (KDS)
-// =============================
 
 const BASE_URL = '/harries-helden-module7.1/api';
-const REFRESH_INTERVAL = 5000; // 5 seconds
+const REFRESH_INTERVAL = 8000; // 8 seconds
 
 // Fetch all orders and render them
 async function loadKitchenOrders() {
