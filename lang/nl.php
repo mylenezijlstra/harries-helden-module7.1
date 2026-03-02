@@ -39,4 +39,15 @@ return [
     "donation_eco" => "Compenseer CO₂-voetafdruk",
     "donation_none" => "Nee, bedankt",
 
+    // kitchen display
+    "kitchen_title" => "Keuken Display",
+    "status_placed" => "Geplaatst & Betaald",
+    "status_preparing" => "In Bereiding",
+    "status_ready" => "Klaar voor Afhaal",
+    "btn_start_preparing" => "Start Bereiding",
+    "btn_mark_ready" => "Markeer Klaar",
+    "btn_picked_up" => "Opgehaald",
+    "time_just_now" => "zojuist",
+    "time_min_ago" => "min geleden",
+
 ];

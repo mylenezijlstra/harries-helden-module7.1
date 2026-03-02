@@ -40,4 +40,15 @@ return [
     "donation_eco" => "Compensate CO₂ footprint",
     "donation_none" => "No, thanks",
 
+    // kitchen display
+    "kitchen_title" => "Kitchen Display",
+    "status_placed" => "Placed & Paid",
+    "status_preparing" => "Preparing",
+    "status_ready" => "Ready for Pickup",
+    "btn_start_preparing" => "Start Preparing",
+    "btn_mark_ready" => "Mark Ready",
+    "btn_picked_up" => "Picked Up",
+    "time_just_now" => "just now",
+    "time_min_ago" => "min ago",
+
 ];
