@@ -159,19 +159,19 @@ async function loadCrossSell(productId) {
         }
 
         const cards = products.map(p => `
-            <div class="cross-sell-card">
+            <div class="cross-sell-card" onclick="openProduct(${p.product_id})" style="cursor:pointer;">
                 <img src="${p.filename}" alt="${p.name}">
                 <div class="cross-sell-info">
                     <span class="cross-sell-name">${p.name}</span>
                     <span class="cross-sell-price">€${parseFloat(p.price).toFixed(2)}</span>
                 </div>
-                <button class="cross-sell-add" onclick="event.stopPropagation(); addToCart(${p.product_id})">+</button>
+                <button class="cross-sell-add" onclick="event.stopPropagation(); openProduct(${p.product_id})">+</button>
             </div>
         `).join('');
 
         section.innerHTML = `
             <div class="cross-sell-container">
-                <h3>🍽️ ${translations.cross_sell_title}</h3>
+                <h3> ${translations.cross_sell_title}</h3>
                 <div class="cross-sell-scroll">${cards}</div>
             </div>
         `;
