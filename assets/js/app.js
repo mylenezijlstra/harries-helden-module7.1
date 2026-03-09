@@ -1,5 +1,5 @@
 async function loadCategories() {
-    const res = await fetch('/harries-helden-module7.1/api/categories.php');
+    const res = await fetch('/kiosk/api/categories.php');
     const categories = await res.json();
 
     const list = document.getElementById('category-list');
@@ -33,7 +33,7 @@ async function loadCategories() {
 
 // Producten laden
 async function loadProducts(cat = 1) {
-    const res = await fetch(`/harries-helden-module7.1/api/products.php?cat=${cat}`);
+    const res = await fetch(`/kiosk/api/products.php?cat=${cat}`);
     const products = await res.json();
 
     const container = document.querySelector('.products');
@@ -59,7 +59,7 @@ async function loadProducts(cat = 1) {
 
 // Toevoegen aan winkelmandje via API
 async function addToCart(id) {
-    await fetch('/harries-helden-module7.1/api/cart.php', {
+    await fetch('/kiosk/api/cart.php', {
         method: "POST",
         body: JSON.stringify({ product_id: id })
     });
@@ -77,7 +77,7 @@ async function addToCartAndClose(id) {
 
 // Winkelmandje info updaten
 async function updateCartInfo() {
-    const res = await fetch('/harries-helden-module7.1/api/order.php');
+    const res = await fetch('/kiosk/api/order.php');
     const data = await res.json();
 
     const bar = document.getElementById('cart-info');
@@ -93,7 +93,7 @@ async function updateCartInfo() {
 
 // Product popup openen
 function openProduct(id) {
-    fetch(`/harries-helden-module7.1/api/product.php?id=${id}`)
+    fetch(`/kiosk/api/product.php?id=${id}`)
         .then(res => res.json())
         .then(p => {
             const overlay = document.getElementById('popup-overlay');
@@ -148,7 +148,7 @@ function openProduct(id) {
 // Cross-sell producten laden
 async function loadCrossSell(productId) {
     try {
-        const res = await fetch(`/harries-helden-module7.1/api/cross_sell.php?product_id=${productId}`);
+        const res = await fetch(`/kiosk/api/cross_sell.php?product_id=${productId}`);
         const products = await res.json();
 
         const section = document.getElementById('cross-sell-section');
