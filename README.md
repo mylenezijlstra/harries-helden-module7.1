@@ -45,6 +45,10 @@ This project is created for educational purposes.
 
 # README.md info voor docenten
 
+website url : 
+kiosk : https://u240381.gluwebsite.nl/kiosk/ 
+kitchen : https://u240381.gluwebsite.nl/kiosk/kitchen.php 
+
 # trello board 
 https://trello.com/b/zWkIxt89/happy-herbefor 
 
