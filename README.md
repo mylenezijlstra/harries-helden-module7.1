@@ -1,5 +1,45 @@
 # harries-helden-module7.1
 
+Happy Herbivore Kiosk
+
+A digital self-service ordering kiosk for a vegan restaurant.
+Customers can browse the menu, customize products, and place an order using a touchscreen interface. Orders are then displayed on a kitchen display system where staff can manage the preparation process.
+
+The project is built with PHP, JavaScript, HTML, and CSS and uses a custom REST-like API to communicate between the kiosk interface and backend.
+
+Features
+Customer Kiosk
+
+- Touchscreen-friendly ordering interface
+- Category-based product browsing
+- Product detail popup with ingredients
+- Ingredient customization
+- Shopping cart system
+- Cross-sell product suggestions
+- Multi-language support
+- Slideshow welcome screen
+- Kitchen Display System
+- Live kitchen order board
+- Orders organized by status
+- Status workflow:
+- Placed & Paid
+- Preparing
+- Ready for Pickup
+- Order timers
+- Kitchen clock
+- API Backend
+
+The kiosk communicates with a PHP API that handles:
+
+- products and categories
+- cart management
+- order processing
+- kitchen status updates
+- cross-sell suggestions
+- receipt generation
+
+This project is created for educational purposes. 
+
 # trello board 
 https://trello.com/b/zWkIxt89/happy-herbefor 
 
